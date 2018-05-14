@@ -1,0 +1,4 @@
+Gas Turbine Deration Estimates
+==============================
+
+This tutorial is under development. Those willing to volunteer in this development, may read the documentation preparation guidelines and mail to contact@codecalculation.com
