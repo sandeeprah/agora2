@@ -1,0 +1,241 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS &#8212; codecalculation.com 0.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CHAPTER 4. - SECOND LAW OF THERMODYNAMICS" href="chap04.html" />
+    <link rel="prev" title="CHAPTER 2. - FIRST LAW OF THERMODYNAMICS" href="chap02.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="chap04.html" title="CHAPTER 4. - SECOND LAW OF THERMODYNAMICS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="chap02.html" title="CHAPTER 2. - FIRST LAW OF THERMODYNAMICS"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">codecalculation.com 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Mechanical Calculations</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Thermodynamics for Rotating Equipment Engineers</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="chapter-3-ideal-gas-and-specific-heats">
+<h1>CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS<a class="headerlink" href="#chapter-3-ideal-gas-and-specific-heats" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ideal-gas">
+<h2>Ideal Gas<a class="headerlink" href="#ideal-gas" title="Permalink to this headline">¶</a></h2>
+<p>Three properties of substances are measurable in nature which are :math:’P’, :math:’v’ and :math:’T’. A relation (which is in the form of an equation) amongst these three state variables or properties is called an <strong>equation of state</strong>.</p>
+<p>The simplest of these equations is the <strong>ideal gas equation of state</strong> which is experimentally found to closely approximate the behaviour of several gases at low pressures and high temperatures.   The ideal gas equation is given by</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>Ideal Gas Equation of State</p>
+<div class="last math notranslate nohighlight">
+\[Pv = RT\]</div>
+</div>
+<p>The constant in the above equation is called as the gas constant. Gas constant is given by the following relationship</p>
+<div class="math notranslate nohighlight">
+\[R = \frac{R_0}{MW}\]</div>
+<p>where</p>
+<p><br> <span class="math notranslate nohighlight">\(R_0\)</span> is the universal gas constant (8314 J/kmol.K units)
+<br> <span class="math notranslate nohighlight">\(MW\)</span> is the molecular weight (kg/kmol) units)</p>
+</div>
+<div class="section" id="specific-heats-and">
+<h2>Specific Heats (<span class="math notranslate nohighlight">\(c_p\)</span> and <span class="math notranslate nohighlight">\(c_v\)</span>)<a class="headerlink" href="#specific-heats-and" title="Permalink to this headline">¶</a></h2>
+<p>Specific heat is defined as the energy required to raise the temperature of a unit mass of substance by one degree.</p>
+<p>The specific heat of a substance depends on the manner in which the substance is heated. In thermodynamic analysis, two types of specific heats are of interest namely, the specific heat at constant volume (<span class="math notranslate nohighlight">\(c_v\)</span>)  and the specific heat at constant pressure (<span class="math notranslate nohighlight">\(c_p\)</span>).</p>
+<div class="section" id="specific-heat-at-constant-volume">
+<h3>Specific Heat at constant volume (<span class="math notranslate nohighlight">\(c_v\)</span>)<a class="headerlink" href="#specific-heat-at-constant-volume" title="Permalink to this headline">¶</a></h3>
+<p>Physically specific heat at constant volume (<span class="math notranslate nohighlight">\(c_v\)</span>) is the heat required to raise the temperature when the volume is kept constant (an isochoric process)</p>
+<p>In chapter02, the first law equation for an isochoric process was derived <a class="reference internal" href="chap02.html#equation-first-law-closed-specific">(16)</a> and is reproduced here, as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}q - w =  \varDelta u + \varDelta pe + \varDelta ke \\\end{split}\]</div>
+<p>Ignoring the potential and kinetic energy terms for a stationary closed system, and using the equation in differential form we have</p>
+<div class="math notranslate nohighlight">
+\[\delta q - \delta w =  du\]</div>
+<p>In chapter 02, the boundary work for an isochoric process was demonstrated as zero (<span class="math notranslate nohighlight">\(w=0\)</span>, no displacement means no work). All the heat supplied goes to raise the internal energy of the fluid. Substituting work as zero we get</p>
+<div class="math notranslate nohighlight">
+\[\delta q =  du\]</div>
+<p>By definition of <span class="math notranslate nohighlight">\(c_v\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[\delta q =  c_v dT\]</div>
+<p>By substitution we have</p>
+<div class="math notranslate nohighlight">
+\[c_v dT =  du\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[c_v  =  \left(\frac{ \partial u}{\partial T}\right)_v\]</div>
+</div>
+<div class="section" id="specific-heat-at-constant-pressure">
+<h3>Specific Heat at constant pressure (<span class="math notranslate nohighlight">\(c_p\)</span>)<a class="headerlink" href="#specific-heat-at-constant-pressure" title="Permalink to this headline">¶</a></h3>
+<p>In chapter 02, the equation for boundary work was derived as <a class="reference internal" href="chap02.html#equation-first-law-isobaric">(22)</a></p>
+<div class="math notranslate nohighlight">
+\[W_{boundary} = P_0(\mathbb{V}_2-\mathbb{V}_1)\]</div>
+<p>or on per unit mass basis as</p>
+<div class="math notranslate nohighlight">
+\[w_{boundary} = P_0v_2-P_0v_1 = P_2v_2 - P_1v_1\]</div>
+<p>in the above we have utilised the fact that for an isobaric process, <span class="math notranslate nohighlight">\(p_0=p_1=p_2\)</span>.</p>
+<p>Stepping back, the first law equation is restated below</p>
+<div class="math notranslate nohighlight">
+\[q - w =  \varDelta u = u_2 - u_1\]</div>
+<p>substituting the value of <span class="math notranslate nohighlight">\(w\)</span> as boundary work for isobaric system and after rearrangment we get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}q  &amp;=  u_2 - u_1 + P_2v_2 - P_1v_1 \\
+q  &amp;=  (u_2 + P_2v_2) - (u_1  + P_1v_1)\end{split}\]</div>
+<p>or making use of the definition of enthalpy <span class="math notranslate nohighlight">\(h = u + Pv\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[q  =  h_2 - h_1\]</div>
+<p>In differential form the above equation can also be written as</p>
+<div class="math notranslate nohighlight">
+\[dq  =  dh\]</div>
+<p>By using the definition of <span class="math notranslate nohighlight">\(c_p\)</span>, we can substitute <span class="math notranslate nohighlight">\(dq\)</span> in the above equation and write</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}c_p dT  &amp;=  dh \\\end{split}\]</div>
+<p>or,</p>
+<div class="math notranslate nohighlight">
+\[c_p  =  \left(\frac{ \partial h}{\partial T}\right)_p\]</div>
+</div>
+<div class="section" id="specific-heat-for-ideal-gas">
+<h3>Specific Heat for Ideal Gas<a class="headerlink" href="#specific-heat-for-ideal-gas" title="Permalink to this headline">¶</a></h3>
+<p>It has been demonstrated experimentally by Joule, that the internal energy is only a function of temperature (<span class="math notranslate nohighlight">\(T\)</span>) i.e.</p>
+<div class="math notranslate nohighlight">
+\[u = u(T)\]</div>
+<p>From enthalpy definition and ideal gas equation we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}h &amp;= u + Pv \\
+Pv &amp;= RT\end{split}\]</div>
+<p>therefore,</p>
+<div class="math notranslate nohighlight">
+\[h = u + RT  = u(T) + RT\]</div>
+<p>as the entire expression on the right hand side is a function of temperature (<span class="math notranslate nohighlight">\(T\)</span>) only we can say that enthalpy is a function of temperature only.</p>
+<div class="math notranslate nohighlight">
+\[h = h(T)\]</div>
+<p>Since <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(h\)</span> are a function of temperature only, specific heats which are their temperature derivatives, are also a function of temperature only.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>Specific Heat behaviour for Ideal Gas</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}u &amp;= u(T) \\
+h &amp;= h(T) \\\end{split}\]</div>
+<p>and</p>
+<div class="last math notranslate nohighlight">
+\[\begin{split}du &amp;= c_v(T)dT \\
+dh &amp;= c_p(T)dT\end{split}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="perfect-gas">
+<h2>Perfect Gas<a class="headerlink" href="#perfect-gas" title="Permalink to this headline">¶</a></h2>
+<p>In thermodynamic analysis many property and heat, work evaluations require that the function <span class="math notranslate nohighlight">\(C_p(T)\)</span> and <span class="math notranslate nohighlight">\(C_v(T)\)</span> be known. The analysis becomes very simple, if we assume that during the process the specific heats remain constant.  When such an assumption is made about the gas, the gas is called as a <em>calorically perfect gas</em> or simply <em>perfect gas</em>.</p>
+<p>While there might be some variation in the values of specific heats, but assuming that they are constant at an average value during the process, the loss of accuracy incurred due to this assumtion is found to be fairly acceptable in most circumstances.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>For a Perfect Gas</p>
+<div class="last math notranslate nohighlight">
+\[\begin{split}c_p &amp;= constant \\
+c_v &amp;= constant\end{split}\]</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS</a><ul>
+<li><a class="reference internal" href="#ideal-gas">Ideal Gas</a></li>
+<li><a class="reference internal" href="#specific-heats-and">Specific Heats (<span class="math notranslate nohighlight">\(c_p\)</span> and <span class="math notranslate nohighlight">\(c_v\)</span>)</a><ul>
+<li><a class="reference internal" href="#specific-heat-at-constant-volume">Specific Heat at constant volume (<span class="math notranslate nohighlight">\(c_v\)</span>)</a></li>
+<li><a class="reference internal" href="#specific-heat-at-constant-pressure">Specific Heat at constant pressure (<span class="math notranslate nohighlight">\(c_p\)</span>)</a></li>
+<li><a class="reference internal" href="#specific-heat-for-ideal-gas">Specific Heat for Ideal Gas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#perfect-gas">Perfect Gas</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="chap02.html"
+                        title="previous chapter">CHAPTER 2. - FIRST LAW OF THERMODYNAMICS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="chap04.html"
+                        title="next chapter">CHAPTER 4. - SECOND LAW OF THERMODYNAMICS</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/mechanical/thermodynamics/chap03.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="chap04.html" title="CHAPTER 4. - SECOND LAW OF THERMODYNAMICS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="chap02.html" title="CHAPTER 2. - FIRST LAW OF THERMODYNAMICS"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">codecalculation.com 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Mechanical Calculations</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Thermodynamics for Rotating Equipment Engineers</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Sandeep Raheja.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>

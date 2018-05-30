@@ -1,0 +1,151 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Noise &#8212; codecalculation.com 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Emissions" href="emissions.html" />
+    <link rel="prev" title="Humid Air Properties" href="hvac/humid-air-props.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="emissions.html" title="Emissions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="hvac/humid-air-props.html" title="Humid Air Properties"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">codecalculation.com 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Mechanical Calculations</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="noise">
+<h1>Noise<a class="headerlink" href="#noise" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial is under development. If you wish to volunteer in developing this, please mail to <a class="reference external" href="mailto:contact&#37;&#52;&#48;codecalculation&#46;com">contact<span>&#64;</span>codecalculation<span>&#46;</span>com</a></p>
+<div class="section" id="noise-attenuation-with-distance">
+<h2>Noise Attenuation with Distance<a class="headerlink" href="#noise-attenuation-with-distance" title="Permalink to this headline">¶</a></h2>
+<p>Calculate Sound Pressure Level (SPL) at a distance R2 when the sound pressure level at distance R1 is known. The source of sound can be either a point, a line or a planar wall.</p>
+</div>
+<div class="section" id="common-noise-conversions">
+<h2>Common Noise Conversions<a class="headerlink" href="#common-noise-conversions" title="Permalink to this headline">¶</a></h2>
+<p>Calculate Sound Pressure Level if Sound Power Level, distance and directivity factor are known.
+Calculate Sound Power Level if Sound Pressure Level, distance and directivity factor are known.
+Calculate distance if Sound Pressure Level, Sound Power Level and directivity factor are known.</p>
+</div>
+<div class="section" id="a-weighting-of-noise-spectrum">
+<h2>A-weighting of Noise Spectrum<a class="headerlink" href="#a-weighting-of-noise-spectrum" title="Permalink to this headline">¶</a></h2>
+<p>Get A-weighted noise spectrum from unfiltered noise spectrum.</p>
+</div>
+<div class="section" id="background-noise-correction">
+<h2>Background Noise Correction<a class="headerlink" href="#background-noise-correction" title="Permalink to this headline">¶</a></h2>
+<p>Get corrected noise levels from total noise levels and background noise levels. Correction can be performed either on the overall noise levels or on spectrum levels.</p>
+</div>
+<div class="section" id="noise-map-due-to-multiple-noise-sources">
+<h2>Noise map due to multiple noise sources<a class="headerlink" href="#noise-map-due-to-multiple-noise-sources" title="Permalink to this headline">¶</a></h2>
+<p>Get noise levels on a predifined area(grid) due to multiple noise sources located on ground. Inputs include the sound power level, directivity factor and the x &amp; y coordinate locations.</p>
+</div>
+<div class="section" id="noise-addition">
+<h2>Noise Addition<a class="headerlink" href="#noise-addition" title="Permalink to this headline">¶</a></h2>
+<p>Perform logarithmic addition of noise levels. Sound pressure levels at a point can be added up using logarithmic addition. Similarly if addition of sound power levels for various octave bands is done, the overall sound power level can be obtained.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Noise</a><ul>
+<li><a class="reference internal" href="#noise-attenuation-with-distance">Noise Attenuation with Distance</a></li>
+<li><a class="reference internal" href="#common-noise-conversions">Common Noise Conversions</a></li>
+<li><a class="reference internal" href="#a-weighting-of-noise-spectrum">A-weighting of Noise Spectrum</a></li>
+<li><a class="reference internal" href="#background-noise-correction">Background Noise Correction</a></li>
+<li><a class="reference internal" href="#noise-map-due-to-multiple-noise-sources">Noise map due to multiple noise sources</a></li>
+<li><a class="reference internal" href="#noise-addition">Noise Addition</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="hvac/humid-air-props.html"
+                        title="previous chapter">Humid Air Properties</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="emissions.html"
+                        title="next chapter">Emissions</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/mechanical/noise.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="emissions.html" title="Emissions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="hvac/humid-air-props.html" title="Humid Air Properties"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">codecalculation.com 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Mechanical Calculations</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Sandeep Raheja.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>

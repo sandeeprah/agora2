@@ -1,4 +1,0 @@
-Steam Turbine Performance Calculator
-====================================
-
-This tutorial is under development. those willing to volunteer may read the documentation preparation guidelines and mail to contact@codecalculation.com

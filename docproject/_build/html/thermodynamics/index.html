@@ -1,0 +1,215 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Thermodynamics for Rotating Equipment (from the ground up) &#8212; codecalculation.com 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS" href="chap01.html" />
+    <link rel="prev" title="Civil/Structural Calculations" href="../civil/index.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="chap01.html" title="CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../civil/index.html" title="Civil/Structural Calculations"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">codecalculation.com 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="thermodynamics-for-rotating-equipment-from-the-ground-up">
+<h1>Thermodynamics for Rotating Equipment (from the ground up)<a class="headerlink" href="#thermodynamics-for-rotating-equipment-from-the-ground-up" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="chap01.html">CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#relevant-areas">Relevant areas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#system-definition">System Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#system-study-approaches">System Study approaches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap01.html#closed-system">closed system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap01.html#controlled-volume">controlled volume</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#property-state-and-process">Property, State and Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#extensive-and-intensive-properties">Extensive and Intensive Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#phase-and-pure-substance">Phase and Pure Substance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#equilibrium">Equilibrium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap01.html#three-measurable-properties-and">Three Measurable Properties <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(v\)</span> and <span class="math notranslate nohighlight">\(T\)</span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap01.html#pressure">Pressure (<span class="math notranslate nohighlight">\(P\)</span>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap01.html#specific-volume">Specific Volume (<span class="math notranslate nohighlight">\(v\)</span>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap01.html#temperature">Temperature (<span class="math notranslate nohighlight">\(T\)</span>)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap02.html">CHAPTER 2. - FIRST LAW OF THERMODYNAMICS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chap02.html#mass-balance-principle">Mass Balance Principle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap02.html#energy-balance-principle">Energy Balance Principle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap02.html#first-law-analysis-for-closed-systems">First Law Analysis for  Closed Systems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#energy-balance-for-closed-systems">Energy Balance for Closed Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#concept-of-boundary-work">Concept of Boundary Work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#first-law-equation-boundary-work-form">First Law Equation (Boundary Work Form)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#isochoric-constant-volume-process">Isochoric (Constant-Volume) Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#isobaric-constant-pressure-process">Isobaric (Constant-Pressure) Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#isothermal-constant-temperature-process-ideal-gas">Isothermal (Constant-Temperature) Process (Ideal Gas)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#polytropic-process">Polytropic Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#isentropic-process">Isentropic Process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap02.html#first-law-analysis-of-controlled-volume-system">First Law Analysis of Controlled Volume System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#mass-energy-balance-for-controlled-volumes">Mass &amp; Energy Balance for Controlled Volumes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#concept-of-flow-work">Concept of Flow Work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#first-law-equation-enthalpy-form">First Law Equation (Enthalpy Form)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#nozzles-and-diffusers">Nozzles and Diffusers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#compressors-and-turbines">Compressors and Turbines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#throttling-valves">Throttling Valves</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#mixing-chambers">Mixing Chambers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap02.html#heat-exchanger">Heat Exchanger</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap03.html">CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chap03.html#ideal-gas">Ideal Gas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap03.html#specific-heats-and">Specific Heats (<span class="math notranslate nohighlight">\(c_p\)</span> and <span class="math notranslate nohighlight">\(c_v\)</span>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap03.html#specific-heat-at-constant-volume">Specific Heat at constant volume (<span class="math notranslate nohighlight">\(c_v\)</span>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap03.html#specific-heat-at-constant-pressure">Specific Heat at constant pressure (<span class="math notranslate nohighlight">\(c_p\)</span>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap03.html#specific-heat-for-ideal-gas">Specific Heat for Ideal Gas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap03.html#perfect-gas">Perfect Gas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap04.html">CHAPTER 4. - SECOND LAW OF THERMODYNAMICS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#cyclic-devices-and-their-efficiencies">Cyclic Devices and their efficiencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#second-law-of-thermodynamics">Second Law of Thermodynamics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chap04.html#the-kelvin-planck-statement">The Kelvin Planck Statement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chap04.html#the-clausius-statement">The Clausius Statement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#reversibile-and-irreversibile-processes">Reversibile and Irreversibile Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#carnot-cycle-and-carnot-principles">Carnot cycle and Carnot Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#the-thermodynamic-temperature-scale-kelvin-scale">The Thermodynamic Temperature Scale (Kelvin Scale)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap04.html#efficiencies-of-carnot-devices">Efficiencies of Carnot Devices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap05.html">CHAPTER 5. - ENTROPY</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#clausius-inequality">Clausius Inequality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#entropy-definition">Entropy Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#the-principle-of-entropy-increase">The principle of entropy increase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#tds-relations">Tds Relations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#entropy-change-of-liquids-and-solids">Entropy Change of Liquids and Solids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#entropy-change-of-ideal-gas">Entropy Change of Ideal Gas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#isentropic-processes-of-perfect-gas">Isentropic Processes of Perfect Gas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#work-done-in-reversible-steady-state-flows">Work Done in Reversible Steady State Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#bernoulli-equation">Bernoulli equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#reversible-is-ideal">Reversible is Ideal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap05.html#t-s-and-h-s-entropy-diagrams">T-s and h-s entropy diagrams</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap06.html">CHAPTER 6. - COMPRESSORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap07.html">CHAPTER 7. - TURBINES</a></li>
+</ul>
+</div>
+<div class="section" id="index">
+<h2>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Thermodynamics for Rotating Equipment (from the ground up)</a><ul>
+<li><a class="reference internal" href="#index">Index</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../civil/index.html"
+                        title="previous chapter">Civil/Structural Calculations</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="chap01.html"
+                        title="next chapter">CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/thermodynamics/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="chap01.html" title="CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../civil/index.html" title="Civil/Structural Calculations"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">codecalculation.com 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Sandeep Raheja.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  </body>
+</html>
