@@ -310,7 +310,7 @@ substituting in the first Tds relationship :eq:`first_Tds` we get
 
 .. math::
 
-  ds = \frac{du}{T} + Pdv = c_v(T)\frac{dT}{T} + R\frac{dv}{v}
+  ds = \frac{du}{T} + \frac{Pdv}{T} = c_v(T)\frac{dT}{T} + R\frac{dv}{v}
 
 the change in entropy ,
 

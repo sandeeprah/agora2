@@ -647,6 +647,7 @@ rearranging we get the first law equation as applicable to compressors.
 .. important:: First Law applied to compressors
 
   .. math::
+    :label: first_law_compressor
 
     \dot{W}_{input} = \dot{Q}_{loss} + \dot{m}(h_{2_{total}} - h_{1_{total}})
 
