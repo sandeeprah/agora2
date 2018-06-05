@@ -16,10 +16,20 @@ Welcome to codecalculation.com's documentation!
    electrical/index
    instrumentation/index
    civil/index
-   thermodynamics/index
+
+
+Online Books
+============
+
+* :ref:`thermodynamics`
+
+
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`search`
+
+
+:ref:`thermodynamics`

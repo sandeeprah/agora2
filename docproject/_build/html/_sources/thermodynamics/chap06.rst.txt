@@ -8,6 +8,8 @@ CHAPTER 6. - COMPRESSORS
 Actual Work of Compression
 --------------------------
 
+.. _actual_work:
+
 A compressor is device to raise the pressure of a compressible fluid. Work is required as an input to the compressor in this process.
 
 .. figure:: compressor2.png
@@ -194,7 +196,7 @@ Using ideal gas equation we can substitute :math:`P_1v_1` we can write as
 
   H_{s} = Z_1RT_1\frac{k}{k-1}\left(\left(\frac{P_{2}}{P_{1}}\right)^{\frac{k-1}{k}}-1\right)
 
-The isentropic efficiency evaluated as
+The isentropic efficiency is evaluated as
 
 .. math::
 

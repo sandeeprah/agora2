@@ -8,6 +8,8 @@ CHAPTER 6. - COMPRESSORS
 Actual Work of Compression
 --------------------------
 
+.. _actual_work:
+
 A compressor is device to raise the pressure of a compressible fluid. Work is required as an input to the compressor in this process.
 
 .. figure:: compressor2.png
