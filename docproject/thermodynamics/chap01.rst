@@ -1,6 +1,12 @@
 CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS
 =============================================
 
+.. meta::
+  :description: This chapter covers the relevant areas of thermodynamics applications and the approaches for system definition. It brings out definitions that are central to the understanding of the subject like property, state, process, equillibrium, pressure, specific volume and temperature.
+  :keywords: thermodynamics, closed system, open system, equillibrium, pressure, specific volume, temperature
+  :author: Sandeep Raheja
+
+
 The word *thermodynamics* originates from the greek words *therme* (heat) and *dynamis* (force). The name of this branch of study suggests that it sprang out of the human endeavour to convert heat energy into useful mechanical work.
 
 Modern thermodynamics, today deals with all aspects of energy conversion including chemical energy, heating and cooling aspects etc.

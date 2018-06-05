@@ -1,14 +1,23 @@
 CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS
 =========================================
 
+.. meta::
+  :description: This chapter introduces the ideal gas equation of state and specific heats. The concept of specific heat at constant volume and specific heat at constant pressure are defined. The relationship between the two specific heats is developed for ideal gas. The chapter also defines the concept of perfect gas which is used to further simplify the thermodynamic analysis.
+  :keywords: thermodynamics, ideal gas, equation of state, specific heat, specific heat at constant volume, specific heat at constant pressure, perfect gas
+  :author: Sandeep Raheja
+
+
+
 .. |br| raw:: html
 
   <br>
 
+.. index:: ideal gas
+
 Ideal Gas
 ---------
 
-Three properties of substances are measurable in nature which are :math:'P', :math:'v' and :math:'T'. A relation (which is in the form of an equation) amongst these three state variables or properties is called an **equation of state**.
+Three properties of substances are measurable in nature which are :math:`P` , :math:`v` and :math:`T`. A relation (which is in the form of an equation) amongst these three state variables or properties is called an **equation of state**.
 
 The simplest of these equations is the **ideal gas equation of state** which is experimentally found to closely approximate the behaviour of several gases at low pressures and high temperatures.   The ideal gas equation is given by
 
@@ -31,12 +40,16 @@ where
 |br| :math:`MW` is the molecular weight (kg/kmol) units)
 
 
+.. index:: specific heat
+
 Specific Heats (:math:`c_p` and :math:`c_v`)
 --------------------------------------------
 
 Specific heat is defined as the energy required to raise the temperature of a unit mass of substance by one degree.
 
 The specific heat of a substance depends on the manner in which the substance is heated. In thermodynamic analysis, two types of specific heats are of interest namely, the specific heat at constant volume (:math:`c_v`)  and the specific heat at constant pressure (:math:`c_p`).
+
+.. index:: specific heat at constant volume
 
 Specific Heat at constant volume (:math:`c_v`)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,7 +94,7 @@ or
   c_v  =  \left(\frac{ \partial u}{\partial T}\right)_v
 
 
-
+.. index:: specific heat at constant pressure
 
 Specific Heat at constant pressure (:math:`c_p`)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -185,6 +198,8 @@ Since :math:`u` and :math:`h` are a function of temperature only, specific heats
     du &= c_v(T)dT \\
     dh &= c_p(T)dT
 
+
+.. index:: perfect gas
 
 Perfect Gas
 -----------

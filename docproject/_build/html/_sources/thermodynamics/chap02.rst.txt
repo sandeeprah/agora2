@@ -1,11 +1,21 @@
 CHAPTER 2. - FIRST LAW OF THERMODYNAMICS
 ========================================
 
+.. meta::
+  :description: This chapter applies the principle of energy conservation to closed and open systems. The first law of thermodynamics is introduced as a relation between heat transfered, work done and change in the  energy content of the system. For a closed system the concept of work is expanded to include boundary work Pdv. For an open system, the concept of flow energy Pv and enthalpy is introduced. The principle of first law is applied to isochoric, isobaric, isothermal, isentropic and polytropic processes for a closed system. First law equation is also applied to open system devices like nozzles, diffusers, compressors, turbines, mixing chambers and throttling devices.
+
+  :keywords: thermodynamics, closed system, open system, boundary work, flow energy, enthalpy, isochoric, isobaric, isothermal, isentropic, polytropic, nozzle, diffuser, compressor, turbine, mixing, throttling
+
+  :author: Sandeep Raheja
+
 While analysing any thermodynamic system, the universal principles of conservation of mass and energy must stand demonstrated in the mathematical model. The method to mathematically invoke these principles in analysis is presented in the sections below under *mass balance principle* and *energy balance principle*.
+
 
 
 Mass Balance Principle
 ----------------------
+
+.. index:: mass balance principle
 
 The principle of mass balance (which follows from the law of conservation of energy) can be stated as:
 
@@ -57,10 +67,12 @@ For incompressible flows, the density at inlet (:math:`\rho_1`) and outlet (:mat
 
   V_1A_1 = V_2A_2
 
-.. index:: energy balance equation
 
 Energy Balance Principle
 ------------------------
+
+.. index:: energy balance principle
+
 
 The principle of energy balance (which follows from the law of conservation of energy) can be stated as:
 
@@ -94,7 +106,7 @@ Under steady state conditions :math:`\dot{E}_{system}=0`, hence
 
 
 
-.. index:: first law of thermodynamics (closed system)
+.. index:: first law for closed system
 
 First Law Analysis for  Closed Systems
 --------------------------------------
@@ -244,6 +256,8 @@ Most closed systems are stationary in nature and hence the change in potential a
 
 While analysing any closed system process, certain idealizations are required to be made to simplify the mathematics. A process may have to be treated as isochoric, isobaric, isothermal, adiabatic or polytropic. A brief on what these are given in the following sections. In each of these processes, the boundary work term must be evaluated and plugged in equation :eq:`first_law_closed_rigorous` or :eq:`first_law_closed_simple` . An evaluation of boundary work for each of these processes is now discussed. This is no more complicated than working out a correct mathematical integral of :math:`\int PdV`, using an appropriate relationship between :math:`P` and :math:`V`
 
+.. index:: isochoric process
+
 Isochoric (Constant-Volume) Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -259,6 +273,7 @@ For a constant volume process, the volume of the system remains fixed and hence 
   W_{boundary} = \int Pd\mathbb{V} =0.
 
 
+.. index:: isobaric process
 
 Isobaric (Constant-Pressure) Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -280,6 +295,8 @@ therefore
 
   W_{boundary} = P_0(\mathbb{V}_2-\mathbb{V}_1)
 
+
+.. index:: isothermal process
 
 Isothermal (Constant-Temperature) Process (Ideal Gas)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -319,6 +336,8 @@ or substituting the value of :math:`C` from :eq:`ideal_gas_isothermal`,
 
   W_{boundary} = P_{1}\mathbb{V}_{1}\ln\frac{\mathbb{V}_{2}}{\mathbb{V}_{1}} = P_{2}\mathbb{V}_{2}\ln\frac{\mathbb{V}_{2}}{\mathbb{V}_{1}} = mR_{g}T_0\ln\frac{\mathbb{V}_{2}}{\mathbb{V}_{1}}
 
+
+.. index:: polytropic process
 
 Polytropic Process
 ~~~~~~~~~~~~~~~~~~
@@ -368,6 +387,8 @@ For :math:`n=0` is an isobaric process
 |br| For :math:`n=\kappa` is an adiabatic process
 
 
+.. index:: isentropic process
+
 Isentropic Process
 ~~~~~~~~~~~~~~~~~~
 
@@ -389,6 +410,8 @@ where,
 
   \kappa = \frac{c_p}{c_v}
 
+
+.. index:: first law for controlled volume system
 
 First Law Analysis of Controlled Volume System
 ----------------------------------------------
@@ -450,6 +473,8 @@ Substituting in :eq:`energy_balance_controlled_volume` we get :
 The rate of energy transfer by incoming and outgoing mass ( :math:`\lambda`) needs to be elaborated further to evolve this equation in to a more useable form.  To understand this energy term, the concept of *flow work*, needs to defined which applies to flow processes or controlled volumes.
 
 
+.. index:: flow work, flow energy
+
 Concept of Flow Work
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -501,6 +526,8 @@ After substitution in :eq:`methalpy`  we get:
   :label: energy_stream
 
   \theta = Pv + u + gz + \frac{1}{2}V^2
+
+.. index:: enthalpy
 
 The quantity :math:`Pv + u` occurs invariably in all flow problems and hence a new property **enthalpy** is defined just to help simplify matters. Thus enthalpy is defined as:
 
@@ -568,6 +595,8 @@ if the changes in kinetic and potential energies can be neglected, then the abov
 
 In the subsequent part of this chapter we shall look into the application of these equation to various devices like nozzles, diffusers, compressors, expanders, throttle valves and mixers etc.
 
+.. index:: nozzle, diffuser
+
 Nozzles and Diffusers
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -596,7 +625,7 @@ Thus the first law equation for controlled volume :eq:`first_law_controlled_volu
   |br| For diffusers, :math:`V_2 < V_1` and hence :math:`h_2 > h_1`, so a heating effect is observed.
 
 
-
+.. index:: compressor, turbine
 
 Compressors and Turbines
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -653,6 +682,7 @@ rearranging we get the first law equation as applicable to compressors.
 
   The heat loss is primarily the bearing loss (mechanical loss) and can be determined by measurement of oil flow rates to bearings and the oil temperature rise, using a known value for the oil specific heat. Surface losses can be measuring the compressor body area, surface temperatures and air temperatures and use convective heat loss rules.
 
+.. index:: throttle
 
 Throttling Valves
 ~~~~~~~~~~~~~~~~~
@@ -685,6 +715,7 @@ which upon rearrangement leads to the following equation of first law as applica
 
   However for most real gases, a temperature drop is observed therby implying that there is a fall in internal energy :math:`u`. This is most notable for refrigerants. For hydrogen, a temperature rise is observed during throttling.
 
+.. index:: mixing
 
 Mixing Chambers
 ~~~~~~~~~~~~~~~
@@ -722,6 +753,8 @@ upon rearrangment, leads to the first law as applicable to mixing:
 
   where :math:`y = \dot{m}_1/\dot{m}_2`, is the mixing ratio
 
+
+.. index:: heat exchanger
 
 Heat Exchanger
 ~~~~~~~~~~~~~~

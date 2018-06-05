@@ -5,7 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta content="This chapter applies the second law of thermodynamics to processes and defines a new property called entropy to quantify second law effects. The concept of entropy increase in isolated systems is introduced. The calculation of entropy changes for ideal and perfect gases is described. The first and second Tds relationships relating entropy to other state properties is developed.  The reversible work in steady flow processes is defined. The use of temperature-entropy and enthalpy entropy diagrams is then demonstrated. " name="description" />
+<meta content="thermodynamics, second law, entropy, Tds relationship, isentropic process, perfect gas, temperature-entropy diagram, enthalpy-entropy diagram" name="keywords" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>CHAPTER 5. - ENTROPY &mdash; codecalculation.com 0.1 documentation</title>
@@ -80,13 +82,16 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../docuMentor.html">docuMentor : Introduction to key features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../process/index.html">Process Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mechanical/index.html">Mechanical Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../electrical/index.html">Electrical Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../instrumentation/index.html">Instrumentation Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../civil/index.html">Civil/Structural Calculations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">E-Books:</span></p>
+<ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thermodynamics for Rotating Equipment (from the ground up)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="chap01.html">CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chap02.html">CHAPTER 2. - FIRST LAW OF THERMODYNAMICS</a></li>
@@ -180,7 +185,7 @@
   <div class="section" id="chapter-5-entropy">
 <h1>CHAPTER 5. - ENTROPY<a class="headerlink" href="#chapter-5-entropy" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="clausius-inequality">
-<h2>Clausius Inequality<a class="headerlink" href="#clausius-inequality" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Clausius Inequality<a class="headerlink" href="#clausius-inequality" title="Permalink to this headline">¶</a></h2>
 <p>Till now we have been dealing with systems that interact with just two thermal reservoirs. However in real life systems may accept and reject heat at variable temperatures.</p>
 <p>Let us consider a system as shown in the figure below that undergoes a cyclic process accepting and rejecting heat at variable temperatures. Let us also assume that heat is supplied to this variable reservoir from yet another thermal reservoir with a fixed temperature <span class="math notranslate nohighlight">\(T_R\)</span>.  So if the temperature <span class="math notranslate nohighlight">\(T\)</span> of the system is below <span class="math notranslate nohighlight">\(T_R\)</span>, we can put a reversible heat engine device <span class="math notranslate nohighlight">\(R\)</span> to operate between the high temperature reservoir and the system to extract some work <span class="math notranslate nohighlight">\(W_R\)</span>. When the temperature <span class="math notranslate nohighlight">\(T\)</span> of the system is above <span class="math notranslate nohighlight">\(T_R\)</span>, we can use the same reversible device in reverse mode to act like a heat pump. Now, however, the work done by the reversible device will be negative as work will have to be done on the device.</p>
 <p>Using the first law of thermodynamics we have:</p>
@@ -221,7 +226,7 @@
 <div class="math notranslate nohighlight" id="equation-entropy-differential">
 <span class="eqno">(3)<a class="headerlink" href="#equation-entropy-differential" title="Permalink to this equation">¶</a></span>\[dS = \frac{\delta Q_R}{T}\]</div>
 <p>Integrating this over a interval gives us the change in entropy as below:</p>
-<div class="admonition important">
+<div class="admonition important" id="index-1">
 <p class="first admonition-title">Important</p>
 <p>Entropy</p>
 <div class="math notranslate nohighlight" id="equation-entropy">
@@ -246,7 +251,7 @@
 </div>
 </div>
 <div class="section" id="the-principle-of-entropy-increase">
-<h2>The principle of entropy increase<a class="headerlink" href="#the-principle-of-entropy-increase" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>The principle of entropy increase<a class="headerlink" href="#the-principle-of-entropy-increase" title="Permalink to this headline">¶</a></h2>
 <p>Consider a cycle that is made up of two processes 1-2, which is an arbitrary process (reversible, irreversible or internally reversible) and process 2-1 which is internally reversible.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/entropy-increase.png"><img alt="entropy increase principle" src="../_images/entropy-increase.png" style="width: 320.0px; height: 360.0px;" /></a>
@@ -283,7 +288,7 @@
 </div>
 </div>
 <div class="section" id="tds-relations">
-<h2>Tds Relations<a class="headerlink" href="#tds-relations" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>Tds Relations<a class="headerlink" href="#tds-relations" title="Permalink to this headline">¶</a></h2>
 <p>Consider a closed system undergoing a cyclic process which is internally reversible. The first law equation in its differential form <a class="reference internal" href="chap02.html#equation-first-law-closed-differential">(14)</a> can be applied and written as:</p>
 <div class="math notranslate nohighlight">
 \[\delta Q_{int,rev} - \delta W_{int,rev} = dU\]</div>
@@ -457,7 +462,7 @@ Pv^{k} &amp;= constant\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[w_{rev} = \int \delta w_{rev}  =  -\int vdP - \varDelta ke - \varDelta pe\]</div>
 <p>If the inlet conditions are denoted by (1) and outlet by (2), and substituting for <span class="math notranslate nohighlight">\(ke\)</span> and <span class="math notranslate nohighlight">\(pe\)</span> we get the work done in a reversible steady flow process as:</p>
-<div class="admonition important">
+<div class="admonition important" id="index-4">
 <p class="first admonition-title">Important</p>
 <p>Work Done in Reversible Steady Flow Process</p>
 <div class="last math notranslate nohighlight" id="equation-work-steady-reversible-flow">
@@ -465,7 +470,7 @@ Pv^{k} &amp;= constant\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="bernoulli-equation">
-<h2>Bernoulli equation<a class="headerlink" href="#bernoulli-equation" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Bernoulli equation<a class="headerlink" href="#bernoulli-equation" title="Permalink to this headline">¶</a></h2>
 <p>The work done in a reversible steady flow process has been derived in the previous section at equation <a class="reference internal" href="#equation-work-steady-reversible-flow">(19)</a>. For the case of incompressible fluids, the equation assumes a simpler form after carrying out the integration. For incompressible fluids, the specific volume <span class="math notranslate nohighlight">\(v\)</span> remains unchanged. The work done in case of reversible steady flow with incompressible liquids can be written after integration and some rearrangement as</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
@@ -524,7 +529,7 @@ q_{actual} - w_{actual} &amp;= \delta h + \delta ke + \delta pe \\\end{split}\]<
 </div>
 </div>
 <div class="section" id="t-s-and-h-s-entropy-diagrams">
-<h2>T-s and h-s entropy diagrams<a class="headerlink" href="#t-s-and-h-s-entropy-diagrams" title="Permalink to this headline">¶</a></h2>
+<span id="index-6"></span><h2>T-s and h-s entropy diagrams<a class="headerlink" href="#t-s-and-h-s-entropy-diagrams" title="Permalink to this headline">¶</a></h2>
 <p>Property diagrams are used to aid in visualization of the thermodynamic process. Two property diagrams are commonly used utilizing entropy as a  the variables on the x-axis. These are the <em>Temperature-entropy (T-s)</em> diagram and the <em>enthalpy-entropy(h-s)</em> diagram which is also known as the mollier chart.</p>
 <p>The following figure illustrates a T-s diagram.</p>
 <div class="figure">

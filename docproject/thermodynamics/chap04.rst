@@ -1,8 +1,16 @@
 CHAPTER 4. - SECOND LAW OF THERMODYNAMICS
 =========================================
 
+.. meta::
+  :description: This chapter discusses the limitations of first law and introduces the second law of thermodynamics. The Kelvin Planck statement and its corollary - the Clausius Statement is discussed. The idea of a machine with 100% thermal efficiency is rejected. The concept of reversibility, Carnot cycle and Carnot principle is introduced. The thermodynamic temperature scale (Kelvin scale is defined). The Carnot efficiency of heat engines, heat pumps and refrigerators is derived.
+
+  :keywords: thermodynamics, second law, thermal efficiency, reversible, irreversible, carnot cycle, kelvin planck, clausius, Coefficient of Performance, efficiency, absolute temperaure scale
+
+
 Cyclic Devices and their efficiencies
 -------------------------------------
+
+.. index:: cyclic device
 
 When a closed system undergoes a thermodynamic cycle, it undergoes a series of processes changing thermodynamic state from one to another and ultimately returns to its original thermodynamic state.
 
@@ -16,9 +24,12 @@ As the system is restored to its original state the energy state of the system r
 
   \underset{cyclic}{\sum}Q = \underset{cyclic}{\sum}W
 
-
+.. index:: cyclic efficiency
 
 Efficiency of a cyclic system would depend on the manner in which it is defined. In general efficiency is nothing but the quantum of goal attained versus the quantum of efforts spend (expressed as a ratio of quantities with same dimensions). The cyclic efficiency would therefore be defined in individual context. There are some common cyclic thermodynamic devices that are encountered in day to day engineering. These are briefly described below:
+
+
+.. index:: heat engine
 
 *Heat engines* are devices that are deployed to convert heat to work. All practical heat engines are cyclic devices. From experience, it is observed that heat engines (irrespective of their underlying design) would obtain their energy as heat from a body at high temperature, convert a part of it   to work and the residual is dumped to the low temperature body. An energy balance schematic of heat engine  is given below:
 
@@ -28,6 +39,8 @@ Efficiency of a cyclic system would depend on the manner in which it is defined.
 
 From first law we have :math:`W_{out} = Q_H - Q_L` and therefore upon substitution and simplification we have:
 
+.. index:: thermal efficiency
+
 The cyclic efficiency of a heat engine is termed as *thermal efficiency* and is defined as:
 
 .. math::
@@ -35,6 +48,7 @@ The cyclic efficiency of a heat engine is termed as *thermal efficiency* and is 
 
   \eta_{thermal} = \frac{W_{out}}{Q_H}  = 1- \frac{Q_L}{Q_H}
 
+.. index:: refrigerator, heat pump
 
 *Refrigerator* and *Heat pumps* devices that take heat from a cold body and deliver it to a hot body. An energy balance schematic of heat pump/refrigerator is given below:
 
@@ -44,12 +58,16 @@ The cyclic efficiency of a heat engine is termed as *thermal efficiency* and is 
 
 While heat pump and refrigerator are very similar in their thermodynamic cycle, the difference lies in the objective. The objective of a heat pump is to to provide heat to the hot body and the objective of a refrigerator is to extract heat from the cold body. Thus the efficiencies of these devices (termed as Coefficient of Performance since this ratio index could be greater than one) are accordingly defined.
 
+.. index:: COP for refrigerator
+
 The Coefficient of Performance (COP) of a refrigerator is defined as:
 
 .. math::
   :label: COP_refrigerator
 
   COP_{refrigerator} = \frac{Q_L}{W_{in}} = \frac{Q_L}{Q_H - Q_L}
+
+.. index:: COP for heat pump
 
 The Coefficient of Performance (COP) of a heat pump is defined as:
 
@@ -60,6 +78,8 @@ The Coefficient of Performance (COP) of a heat pump is defined as:
 
 
 As discussed above these cyclic devices have thermal interactions with a  body (or bodies) in surroundings which absorb or reject heat acting like a heat reservoir of some sort. Our analysis would be significantly simplified given the assumption that this heat interaction takes place in an isothermal manner i.e. does not lead to a fall or rise of the body.
+
+.. index:: thermal reservoir
 
 .. important::
 
@@ -86,6 +106,8 @@ These new laws, happen to be purely empirical in nature and are postulated as st
 These statements emerged out years of experience gained by engineers trying to efficiently convert heat to work using devices commonly called as *heat engines* and those working to extract heat from cooler bodies and transferring them to hotter bodies using devices called as *heat pumps* (refrigerator).
 
 
+.. index:: second law of thermodynamics, kelvin planck statement
+
 The Kelvin Planck Statement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The second law of thermodynamics is best described by a statement credited to Kelvin Planck which states that:
@@ -104,6 +126,8 @@ In other words it is impossible to build a system with 100% thermal efficiency. 
 
 As we can imagine this statement comes from the engineering experience gathered in the domain of heat engines.
 
+
+.. index:: clausius statement
 
 The Clausius Statement
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -127,6 +151,9 @@ It can be demonstrated that the clausius statement is just a corollary of the Ke
 .. figure:: kelvin-clausius.png
   :scale: 70 %
   :alt: illustration for equivalence of kelvin-planck and clausius statements
+
+
+.. index:: reversible process, irreversible process
 
 Reversibile and Irreversibile Processes
 ---------------------------------------
@@ -152,6 +179,8 @@ For a process to be classified as reversible, it must change state from one equi
 (2) expansion/contraction against infinitismal pressure gradients
 (3) heat transfer against infinitismal temperature gradients.
 
+
+.. index:: carnot cycle, carnot principles
 
 Carnot cycle and Carnot Principles
 ----------------------------------
@@ -201,6 +230,8 @@ While Carnot cycle is no doubt interesting, what is even more are the two princi
   All reversible engines operating between the same two reservoirs have the same efficiency.
 
 *Proof*: To the contrary, let us assume that there exists a reversible engine (:math:`R1`) which is more efficient than a reversible engine (:math:`R2`) when operating between same thermal reservoirs. We can here onwards follow the same steps as we did in the previous proof. The resulting combination machine again in this case would violate the second law. So this assumption must be wrong again.
+
+.. index:: absolute temperature scale, kelvin temperature scale
 
 The Thermodynamic Temperature Scale (Kelvin Scale)
 --------------------------------------------------
@@ -269,6 +300,8 @@ In order to fix the magnitude of a unit of Kelvin, the International Conference 
 Efficiencies of Carnot Devices
 ------------------------------
 
+.. index:: carnot efficiency - heat engine
+
 **Heat Engine**
 
 From :eq:`thermal_efficiency_heat_engine`, we can write:
@@ -289,6 +322,8 @@ Using the definition of Kelvin scale, :math:`(\frac{Q_L}{Q_H})_{reversible} = \f
 
 |br|
 
+.. index:: carnot efficiency - refrigerator
+
 **Refrigerator**
 
 From :eq:`COP_refrigerator`, we can write:
@@ -308,6 +343,8 @@ Using the definition of Kelvin scale, :math:`(\frac{Q_H}{Q_L})_{reversible} = \f
 
 
 |br|
+
+.. index:: carnot efficiency - heat pump
 
 **Heat Pump**
 

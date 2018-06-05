@@ -1,9 +1,19 @@
 CHAPTER 6. - COMPRESSORS
 ========================
 
+.. meta::
+  :description: This chapter applies the principles of first law and second law of thermodynamics to compression process. The method for the determination of actual work of compressioncon from change in enthalpy is outlined for adiabatic compression case. Different approaches for the computation of ideal work reference are then introduced. These include isothermal, isentropic and polytropic work reference. The weakness of isentropic analysis for multistage compression is highlighted and a remedial approach for the same in the form of polytropic analysis is proposed. The concept of polytropic efficiency and polytropic head is explained and how they truely reflect the aerodynamic build quality of the machine.
+
+
+  :keywords: thermodynamics, compressor, isothermal efficiency, isentropic efficiency, polytropic efficiency, polytropic head, small stage efficiency, efficiency, polytropic, reversible, vdP
+
+
+
 .. |br| raw:: html
 
   <br>
+
+.. index:: actual work
 
 Actual Work of Compression
 --------------------------
@@ -60,6 +70,7 @@ In most practical scenarios, the actual work process is adiabatic in nature, and
 Please note that compressors using interstage cooling or diaphragm cooling should never use this approximation as the error would be unacceptable.
 
 
+.. index:: ideal reference work
 
 Ideal Work of Compression and Types of Compression Efficiencies
 ---------------------------------------------------------------
@@ -101,6 +112,8 @@ The quantity work per unit mass is also customarily known as *Head* (:math:`H`).
 
 The compression efficiency can then be defined as
 
+.. index:: efficiency compression
+
 .. math::
 
   \eta  =  \frac{H_{ideal}}{w_{actual}}
@@ -108,11 +121,15 @@ The compression efficiency can then be defined as
 
 The power consumed by the compressor can be written as
 
+.. index:: power compression
+
 .. math::
 
   P = \frac{\dot{m} H_{ideal}}{\eta}
 
 A detailed discussion on each of these processes and the ideal work (:math:`H_{ideal}`) and efficiency (:math:`\eta`) associated with each of them is presented in the sections below.
+
+.. index:: isothermal head
 
 Isothermal Head
 ~~~~~~~~~~~~~~~
@@ -146,6 +163,8 @@ Isothermal compression is best visualised on a T-s diagram. The area under the c
   :scale: 100 %
   :alt: compression isothermal
 
+
+.. index:: isentropic head
 
 
 Isentropic Head
@@ -216,6 +235,7 @@ The isentropic analysis of compression has some disadvantages:
 
 The above problems as well as its solutions are discussed in the next section which deals with polytropic analysis of the compression process.
 
+.. index:: polytropic head
 
 Polytropic Head
 ~~~~~~~~~~~~~~~
@@ -326,6 +346,8 @@ The example above inspires us to develop a new definition of ideal work referenc
 
 For the purpose of illustration we had chosen to divide the overall compression in three small stages of compression, but to improve our accuracy we could very well divide the compression in infinite number of steps. We similarly, assume that the irreversibilities in the compression process are uniform in nature, and the small isentropic efficiency at the infinitismal stage of compression remains constant. Thus polytropic efficiency is defined in differential terms as
 
+.. index:: polytropic efficiency
+
 .. important:: polytropic efficiency
 
   .. math::
@@ -369,6 +391,8 @@ Taking the integral over the process path we have
 Since :math:`\eta_p` was assumed constant at the infinitismal level of compression, we were able to take this out of the integral in the equation above. The integral :math:`\int_1^2 vdP` is analogous to the quantity :math:`H_p` in the example case above.
 
 While for any flow process, :math:`\int vdP` will always, give reversible work, for the special case when the isentropic efficiency of infinitismal stage is constant, this integral is given the special name of polytropic head.  Therefore, we have the following definition:
+
+.. index:: polytropic head
 
 .. important:: Polytropic Head Definition
 
@@ -453,6 +477,8 @@ Using ideal gas laws and rearrangements the following relationships can be estab
   P_1v_1^{n} &= P_2v_2^{n} \\
 
 A process which obeys the relationships of the above form, are referred to as polytropic process. These relationships can be written in a compact form as
+
+.. index:: polytropic process
 
 .. important:: Polytropic Process
 

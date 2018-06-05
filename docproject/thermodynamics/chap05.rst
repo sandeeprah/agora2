@@ -1,10 +1,18 @@
 CHAPTER 5. - ENTROPY
 ====================
 
+.. meta::
+  :description: This chapter applies the second law of thermodynamics to processes and defines a new property called entropy to quantify second law effects. The concept of entropy increase in isolated systems is introduced. The calculation of entropy changes for ideal and perfect gases is described. The first and second Tds relationships relating entropy to other state properties is developed.  The reversible work in steady flow processes is defined. The use of temperature-entropy and enthalpy entropy diagrams is then demonstrated.
+
+  :keywords: thermodynamics, second law, entropy, Tds relationship, isentropic process, perfect gas, temperature-entropy diagram, enthalpy-entropy diagram
+
+
+
 .. |br| raw:: html
 
   <br>
 
+.. index:: clausius inequality
 
 Clausius Inequality
 -------------------
@@ -80,6 +88,8 @@ The cyclic integral of the quantity :math:`\frac{dQ}{T}` is zero. This behaviour
 
 Integrating this over a interval gives us the change in entropy as below:
 
+.. index:: entropy
+
 .. important:: Entropy
 
   .. math::
@@ -114,6 +124,8 @@ which after simplification yields:
 
     \varDelta S = \frac{Q_{int,rev}}{T_0}
 
+
+.. index:: entropy increase principle
 
 The principle of entropy increase
 ---------------------------------
@@ -177,6 +189,8 @@ For an isolated system (adiabatic and closed) we have :math:`\delta Q = 0`, ther
 
   The universe as a whole can be looked upon as an isolated system. Every process that occurs in the universe ultimately leads to a net increase in its entropy level. As one goes "forward" in time, the entropy of universe can increase, but not decrease. Hence, from one perspective, entropy can be looked upon as an arrow of time. When measured for an isolated system, it helps distinguish the past from the future
 
+
+.. index:: Tds Relations
 
 Tds Relations
 -------------
@@ -475,6 +489,8 @@ Integrating over the process we get an important relation for work done in stead
 
 If the inlet conditions are denoted by (1) and outlet by (2), and substituting for :math:`ke` and :math:`pe` we get the work done in a reversible steady flow process as:
 
+.. index:: reversible work
+
 .. important:: Work Done in Reversible Steady Flow Process
 
   .. math::
@@ -483,6 +499,7 @@ If the inlet conditions are denoted by (1) and outlet by (2), and substituting f
     w_{rev}  =  -\int_1^2 vdP +  \frac{V_1^2-V_2^2}{2} +  g(z_1 - z_2)
 
 
+.. index:: bernoulli equation
 
 Bernoulli equation
 ------------------
@@ -580,10 +597,15 @@ Now for a turbine, the work done has a positive sign, while for compressors they
     |w_{compressor, reversible}| < |w_{compressor, actual}|
 
 
+
+.. index:: entropy diagrams, enthalpy-entropy diagram, temperature-entropy diagram
+
 T-s and h-s entropy diagrams
 ----------------------------
 
 Property diagrams are used to aid in visualization of the thermodynamic process. Two property diagrams are commonly used utilizing entropy as a  the variables on the x-axis. These are the *Temperature-entropy (T-s)* diagram and the *enthalpy-entropy(h-s)* diagram which is also known as the mollier chart.
+
+.. index::temperature-entropy diagram
 
 The following figure illustrates a T-s diagram.
 
@@ -600,6 +622,7 @@ Isothermal processes appear as horizontal line segments while isentropic process
   :scale: 100 %
   :alt: temperature entropy diagram for isothermal and isentropic process
 
+.. index::enthalpy-entropy diagram
 
 The other diagram called the enthalpy-entropy diagram or h-s diagram is extensively used in the study of steady flow devices like compressors, turbines and nozzles.  On an h-s diagram the vertical distance denotes the change in enthaly :math:`\varDelta h` and the horizontal distance :math:`\varDelta s` denotes the change in entropy. Now practically as most compressors, turbines and nozzles are adiabatic in their operation, the change in enthalpy corresponds to work delivered or absorbed and the change in entropy is mainly attributed to the entropy generated within the system. Such entropy gets generated as part of the work gets converted to heat due to friction, viscosities or due to sudden expansion and contractions. The h-s diagram manages to capture both key concerns of a designer the work input output and the losses.
 

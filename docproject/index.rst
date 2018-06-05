@@ -18,10 +18,11 @@ Welcome to codecalculation.com's documentation!
    civil/index
 
 
-Online Books
-============
+.. toctree::
+  :maxdepth: 1
+  :caption: E-Books:
 
-* :ref:`thermodynamics`
+  thermodynamics/index
 
 
 

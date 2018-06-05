@@ -5,7 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta content="This chapter applies the principles of first law and second law of thermodynamics to compression process. The method for the determination of actual work of compressioncon from change in enthalpy is outlined for adiabatic compression case. Different approaches for the computation of ideal work reference are then introduced. These include isothermal, isentropic and polytropic work reference. The weakness of isentropic analysis for multistage compression is highlighted and a remedial approach for the same in the form of polytropic analysis is proposed. The concept of polytropic efficiency and polytropic head is explained and how they truely reflect the aerodynamic build quality of the machine.  " name="description" />
+<meta content="thermodynamics, compressor, isothermal efficiency, isentropic efficiency, polytropic efficiency, polytropic head, small stage efficiency, efficiency, polytropic, reversible, vdP" name="keywords" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>CHAPTER 6. - COMPRESSORS &mdash; codecalculation.com 0.1 documentation</title>
@@ -80,14 +82,17 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../docuMentor.html">docuMentor : Introduction to key features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../process/index.html">Process Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mechanical/index.html">Mechanical Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../electrical/index.html">Electrical Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../instrumentation/index.html">Instrumentation Calculations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../civil/index.html">Civil/Structural Calculations</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">thermodynamics for all</a><ul class="current">
+</ul>
+<p class="caption"><span class="caption-text">E-Books:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Thermodynamics for Rotating Equipment (from the ground up)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="chap01.html">CHAPTER 1. - INTRODUCTION AND KEY DEFINITIONS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chap02.html">CHAPTER 2. - FIRST LAW OF THERMODYNAMICS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chap03.html">CHAPTER 3. - IDEAL GAS AND SPECIFIC HEATS</a></li>
@@ -95,7 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="chap05.html">CHAPTER 5. - ENTROPY</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">CHAPTER 6. - COMPRESSORS</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#actual-work-of-compression">Actual Work of Compression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ideal-work-of-compression-and-types-of-compression-efficiencies">Ideal Work of Compression and Types of Compression Efficiencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#index-1">Ideal Work of Compression and Types of Compression Efficiencies</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#isothermal-head">Isothermal Head</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#isentropic-head">Isentropic Head</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#polytropic-head">Polytropic Head</a></li>
@@ -176,7 +181,7 @@
   <div class="section" id="chapter-6-compressors">
 <h1>CHAPTER 6. - COMPRESSORS<a class="headerlink" href="#chapter-6-compressors" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="actual-work-of-compression">
-<h2>Actual Work of Compression<a class="headerlink" href="#actual-work-of-compression" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Actual Work of Compression<a class="headerlink" href="#actual-work-of-compression" title="Permalink to this headline">¶</a></h2>
 <p id="actual-work">A compressor is device to raise the pressure of a compressible fluid. Work is required as an input to the compressor in this process.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/compressor2.png"><img alt="compressor schematic" src="../_images/compressor2.png" style="width: 352.09999999999997px; height: 306.59999999999997px;" /></a>
@@ -205,8 +210,8 @@
 \[w_{actual} = c_{p_{avg}}(T_2 - T_1)\]</div>
 <p>Please note that compressors using interstage cooling or diaphragm cooling should never use this approximation as the error would be unacceptable.</p>
 </div>
-<div class="section" id="ideal-work-of-compression-and-types-of-compression-efficiencies">
-<h2>Ideal Work of Compression and Types of Compression Efficiencies<a class="headerlink" href="#ideal-work-of-compression-and-types-of-compression-efficiencies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="index-1">
+<span id="ideal-work-of-compression-and-types-of-compression-efficiencies"></span><h2>Ideal Work of Compression and Types of Compression Efficiencies<a class="headerlink" href="#index-1" title="Permalink to this headline">¶</a></h2>
 <p>While the first law helps us to establish the power consumption of an actual compressor, we have not been guided about the power that would be consumed by an ideal compressor. So what is an ideal compressor (or a compression process) ? Theoritically there are three cases of process compression which can be used for benchmarking the performance of an actual compression process. These are:</p>
 <ol class="loweralpha simple">
 <li>Isothermal Process (<span class="math notranslate nohighlight">\(PV = constant\)</span>)</li>
@@ -228,14 +233,14 @@
 <div class="math notranslate nohighlight" id="equation-reversible-head">
 <span class="eqno">(3)<a class="headerlink" href="#equation-reversible-head" title="Permalink to this equation">¶</a></span>\[H_{ideal}  =  \int_1^2 vdP\]</div>
 <p>The compression efficiency can then be defined as</p>
-<div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight" id="index-2">
 \[\eta  =  \frac{H_{ideal}}{w_{actual}}\]</div>
 <p>The power consumed by the compressor can be written as</p>
-<div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight" id="index-3">
 \[P = \frac{\dot{m} H_{ideal}}{\eta}\]</div>
 <p>A detailed discussion on each of these processes and the ideal work (<span class="math notranslate nohighlight">\(H_{ideal}\)</span>) and efficiency (<span class="math notranslate nohighlight">\(\eta\)</span>) associated with each of them is presented in the sections below.</p>
 <div class="section" id="isothermal-head">
-<h3>Isothermal Head<a class="headerlink" href="#isothermal-head" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>Isothermal Head<a class="headerlink" href="#isothermal-head" title="Permalink to this headline">¶</a></h3>
 <p>In an isothermal process, the heat developed in the compression process is allowed to escape by arranging sufficient cooling and the temperature remains constant. Practically, a finite temperature gradient is required, for a heat transfer to happen. Therefore, implementation of isothermal compression would require, infinite amount of heat transfer area and infinite amount of time for this thermal interaction. While, it may be impractical to build a compressor that truly behaves like an isothermal machine, we can try to build machines that are more and more closer to this, by increasing the amount of intercooling during the compression process.</p>
 <p>From an isothermal process from ideal gas law we have</p>
 <div class="math notranslate nohighlight">
@@ -254,7 +259,7 @@ v &amp;= \frac{C}{P}\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="isentropic-head">
-<h3>Isentropic Head<a class="headerlink" href="#isentropic-head" title="Permalink to this headline">¶</a></h3>
+<span id="index-5"></span><h3>Isentropic Head<a class="headerlink" href="#isentropic-head" title="Permalink to this headline">¶</a></h3>
 <p>In an isentropic compression the compression process is adiabatic (does not allow for any heat exchange with the surroundings) and also reversible (no mechanical friction, viscous losses etc. and therefore no entropy change).</p>
 <p>If the compression process is carried out fast (which is usually the case) there is hardly any time for heat interaction to happen and the process can be approximated as an adiabatice process. In Chapter 05, isentropic relationships were developed for state variables P, v, T in the case of Perfect gas. Those relationships are reproduced below:</p>
 <div class="math notranslate nohighlight">
@@ -294,7 +299,7 @@ H_{s} &amp;= C^{\frac{1}{k}}\frac{k}{k-1}P_{1}^{\frac{k-1}{k}}\left(\left(\frac{
 <p>The above problems as well as its solutions are discussed in the next section which deals with polytropic analysis of the compression process.</p>
 </div>
 <div class="section" id="polytropic-head">
-<h3>Polytropic Head<a class="headerlink" href="#polytropic-head" title="Permalink to this headline">¶</a></h3>
+<span id="index-6"></span><h3>Polytropic Head<a class="headerlink" href="#polytropic-head" title="Permalink to this headline">¶</a></h3>
 <p>Before we dive into what polytropic compression is, let us take a look at multistage compressions and see some weaknesses of a polytropic analysis.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/compression-multistage-isentropic.png"><img alt="isentropic analysis of multistage compression" src="../_images/compression-multistage-isentropic.png" style="width: 640.0px; height: 480.0px;" /></a>
@@ -350,7 +355,7 @@ H_{s} &amp;= C^{\frac{1}{k}}\frac{k}{k-1}P_{1}^{\frac{k-1}{k}}\left(\left(\frac{
 \[\eta_{small} = \frac{H_p}{w_{actual}} = \eta_{overall}\]</div>
 <p>The example above inspires us to develop a new definition of ideal work reference.</p>
 <p>For the purpose of illustration we had chosen to divide the overall compression in three small stages of compression, but to improve our accuracy we could very well divide the compression in infinite number of steps. We similarly, assume that the irreversibilities in the compression process are uniform in nature, and the small isentropic efficiency at the infinitismal stage of compression remains constant. Thus polytropic efficiency is defined in differential terms as</p>
-<div class="admonition important">
+<div class="admonition important" id="index-7">
 <p class="first admonition-title">Important</p>
 <p>polytropic efficiency</p>
 <div class="last math notranslate nohighlight" id="equation-polytropic-efficiency-definition">
@@ -374,7 +379,7 @@ H_{s} &amp;= C^{\frac{1}{k}}\frac{k}{k-1}P_{1}^{\frac{k-1}{k}}\left(\left(\frac{
 <span class="eqno">(8)<a class="headerlink" href="#equation-equation-two" title="Permalink to this equation">¶</a></span>\[w_{actual} = h_2 - h_1 =  \int_1^2 \frac{vdP}{\eta_p} = \frac{1}{\eta_p} \int_1^2 vdP\]</div>
 <p>Since <span class="math notranslate nohighlight">\(\eta_p\)</span> was assumed constant at the infinitismal level of compression, we were able to take this out of the integral in the equation above. The integral <span class="math notranslate nohighlight">\(\int_1^2 vdP\)</span> is analogous to the quantity <span class="math notranslate nohighlight">\(H_p\)</span> in the example case above.</p>
 <p>While for any flow process, <span class="math notranslate nohighlight">\(\int vdP\)</span> will always, give reversible work, for the special case when the isentropic efficiency of infinitismal stage is constant, this integral is given the special name of polytropic head.  Therefore, we have the following definition:</p>
-<div class="admonition important">
+<div class="admonition important" id="index-8">
 <p class="first admonition-title">Important</p>
 <p>Polytropic Head Definition</p>
 <p>For a process in which the isentropic efficiency of infinitismal stage is constant, the polytropic head is defined as</p>
@@ -418,7 +423,7 @@ H_{s} &amp;= C^{\frac{1}{k}}\frac{k}{k-1}P_{1}^{\frac{k-1}{k}}\left(\left(\frac{
 T_1P_1^{\frac{1-n}{n}} &amp;= T_2P_2^{\frac{1-n}{n}} \\
 P_1v_1^{n} &amp;= P_2v_2^{n} \\\end{split}\]</div>
 <p>A process which obeys the relationships of the above form, are referred to as polytropic process. These relationships can be written in a compact form as</p>
-<div class="admonition important">
+<div class="admonition important" id="index-9">
 <p class="first admonition-title">Important</p>
 <p>Polytropic Process</p>
 <div class="math notranslate nohighlight" id="equation-polytropic-relationships">
