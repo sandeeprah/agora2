@@ -10,6 +10,7 @@ Mechanical Calculations
    engines/index
    flare/index
    heater/index
+   pressure-vessel/index
    piping/index
    hvac/index
    noise
