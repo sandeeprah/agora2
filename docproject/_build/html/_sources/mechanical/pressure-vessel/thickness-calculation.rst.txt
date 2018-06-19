@@ -1,6 +1,18 @@
+.. meta::
+  :title: Pressure Vessel Thickness/MAWP Calculation - Reference
+  :description: Help/Reference for the thickness/MAWP, volume and weight estimation of pressure vessels. The thickness and MAWP are calculated based on the internal design pressures as per ASME Section VIII Div-1 requirements.
+  :keywords: pressure vessel thickness MAWP volume weight calculation ASME
+  :author: Sandeep Raheja
+
+
 =====================================
 Pressure Vessel Thickness Calculation
 =====================================
+
+.. figure:: vessel.jpg
+  :scale: 70 %
+  :alt: pressure vessel
+
 
 .. |br| raw:: html
 
