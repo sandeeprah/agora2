@@ -13,5 +13,6 @@ Mechanical Calculations
    pressure-vessel/index
    piping/index
    hvac/index
+   fluidmech/index
    noise
    emissions
