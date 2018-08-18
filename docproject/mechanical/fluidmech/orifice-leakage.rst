@@ -10,7 +10,7 @@ Orifice Leakage Calculation
 ===========================
 
 .. figure:: reservoir-orifice.png
-  :scale: 70 %
+  :scale: 50 %
   :alt: reservoir leakage through orifice
 
 
